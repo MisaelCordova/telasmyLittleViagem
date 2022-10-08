@@ -1,19 +1,21 @@
-package com.example.telastrabalho;
+package com.example.telastrabalho.Adapter;
 
 import android.app.Activity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.telastrabalho.R;
+import com.example.telastrabalho.model.Viagem;
 
 import java.util.ArrayList;
 
-public class EntretenimentoAdapter extends BaseAdapter {
-    private ArrayList<Entretenimento> arlLista;
+public class ViagemAdapter extends BaseAdapter {
+    private ArrayList<Viagem> arlLista;
     private Activity act;
 
-    public EntretenimentoAdapter(final Activity act, final ArrayList<Entretenimento> arlLista) {
+    public ViagemAdapter(final Activity act, final ArrayList<Viagem> arlLista) {
         this.act = act;
         this.arlLista = arlLista;
     }
@@ -37,16 +39,13 @@ public class EntretenimentoAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         if (view == null) {
-            view = act.getLayoutInflater().inflate(R.layout.activity_entretenimento, viewGroup, false);
+            view = act.getLayoutInflater().inflate(R.layout.listviagens, viewGroup, false);
         }
 
-        Entretenimento e = arlLista.get(i);
+        Viagem v = arlLista.get(i);
 
-        EditText nomePessoa = view.findViewById(R.id.nomeEntretenimento);
-        nomePessoa.setText(e.getNome());
-
-        TextView cpfPessoa = view.findViewById(R.id.valorEntretenimento);
-        cpfPessoa.setText(e.getValor());
+        TextView nomePessoa = view.findViewById(R.id.nomeViagem);
+        nomePessoa.setText(v.getNomeViagem());
 
         return view;
     }

@@ -8,12 +8,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
     <EditText
-        android:id="@+id/nomeEntretenimento"
+        android:id="@+id/nomeDiverso"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="Zoo pomerode"/>
         <EditText
-            android:id="@+id/valorEntretenimento"
+            android:id="@+id/valorDiverso"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="vila encantada">

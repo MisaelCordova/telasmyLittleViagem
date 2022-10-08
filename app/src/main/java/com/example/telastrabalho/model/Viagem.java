@@ -1,4 +1,4 @@
-package com.example.telastrabalho;
+package com.example.telastrabalho.model;
 
 public class Viagem {
     private String nomeViagem;

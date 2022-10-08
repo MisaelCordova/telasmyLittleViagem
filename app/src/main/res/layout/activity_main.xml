@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:fillViewport="true">
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -49,6 +47,7 @@
             android:layout_marginRight="55dp"
             android:text="Total Estimado de KM:"/>
         <EditText
+            android:id="@+id/totalEstimadoKm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -66,6 +65,7 @@
             android:layout_marginRight="60dp"
             android:text="Média de KM por litro:"/>
         <EditText
+            android:id="@+id/mediaKmLitro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -83,6 +83,7 @@
             android:layout_marginRight="65dp"
             android:text="Custo médio por litro:"/>
         <EditText
+            android:id="@+id/custoMedioLitro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -100,6 +101,7 @@
             android:layout_marginRight="110dp"
             android:text="Total de Veículos:"/>
         <EditText
+            android:id="@+id/totalVeiculos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -117,10 +119,11 @@
             android:layout_marginRight="248dp"
             android:text="Total:"/>
         <TextView
+            android:id="@+id/totalGasolina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="1"/>
+            android:text=""/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -133,6 +136,7 @@
             android:textSize="25dp"
             android:text="Adicionar a viagem?"/>
         <Switch
+            android:id="@+id/addGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
@@ -174,6 +178,7 @@
             android:layout_marginRight="10dp"
             android:text="Custo estimado por pessoa:"/>
         <EditText
+            android:id="@+id/custoEstimadoPessoa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -191,6 +196,7 @@
             android:layout_marginRight="145dp"
             android:text="Aluguel Veículo:"/>
         <EditText
+            android:id="@+id/aluguelVeiculo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -208,6 +214,7 @@
             android:layout_marginRight="260dp"
             android:text="Total:"/>
         <TextView
+            android:id="@+id/totalTarifaAerea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -222,8 +229,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Adicionar a viagem:"/>
+            android:text="Adicionar a viagem?"/>
         <Switch
+            android:id="@+id/addTarifaEarea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
@@ -265,6 +273,7 @@
             android:layout_marginRight="10dp"
             android:text="Custo estimado por Refeição:"/>
         <EditText
+            android:id="@+id/custoEstimadoRefeicao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -282,6 +291,7 @@
             android:layout_marginRight="145dp"
             android:text="Refeições por dia:"/>
         <EditText
+            android:id="@+id/refeicoesDia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -299,10 +309,11 @@
             android:layout_marginRight="285dp"
             android:text="Total:"/>
         <TextView
+            android:id="@+id/totalRefeicoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="1"/>
+            android:text=""/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -313,8 +324,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Adicionar a viagem:"/>
+            android:text="Adicionar a viagem?"/>
         <Switch
+            android:id="@+id/addRefeicao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
@@ -356,6 +368,7 @@
             android:layout_marginRight="60dp"
             android:text="Custo médio (por noite):"/>
         <EditText
+            android:id="@+id/custoEstimadoNoite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -373,6 +386,7 @@
             android:layout_marginRight="175dp"
             android:text="Total de noites:"/>
         <EditText
+            android:id="@+id/totalNoites"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
@@ -390,10 +404,11 @@
             android:layout_marginRight="290dp"
             android:text="Total:"/>
         <TextView
+            android:id="@+id/totalHospedagem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="1"/>
+            android:text=""/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -404,8 +419,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="Adicionar a viagem:"/>
+            android:text="Adicionar a viagem?"/>
         <Switch
+            android:id="@+id/addHospedagem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="50dp"
@@ -451,15 +467,15 @@
         <Button
             android:id="@+id/adicionardiversos"
             android:layout_width="match_parent"
+            android:backgroundTint="@color/azul_gremio"
             android:layout_height="wrap_content"
-            android:text="Adicionar ">
+            android:text="Adicionar gasto diverso ">
         </Button>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        >
         <TextView
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
@@ -468,10 +484,11 @@
             android:layout_marginRight="290dp"
             android:text="Total:"/>
         <TextView
+            android:id="@+id/totalDiversos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="25dp"
-            android:text="1"/>
+            android:text=""/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
