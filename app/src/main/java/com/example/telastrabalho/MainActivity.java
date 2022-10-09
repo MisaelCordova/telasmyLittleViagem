@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private DiversosAdapter adapter;
     private ArrayList<Diversos> arl;
     private Button btnAdiconarDiversos;
+    private Button btnSalvarGastos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +76,9 @@ public class MainActivity extends AppCompatActivity {
         btnAdiconarDiversos = findViewById(R.id.adicionardiversos);
         totalDiversos = findViewById(R.id.totalDiversos);
         listaDiversos = findViewById(R.id.listDiversos);
+        btnSalvarGastos = findViewById(R.id.salvar);
         registerForContextMenu(listaDiversos);
+
         btnAdiconarDiversos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

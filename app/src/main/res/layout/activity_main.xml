@@ -475,6 +475,7 @@
         <Button
             android:id="@+id/adicionardiversos"
             android:layout_width="match_parent"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/azul_gremio"
             android:layout_height="wrap_content"
             android:text="Adicionar gasto diverso ">
@@ -508,9 +509,15 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:text="Adicionar a viagem:"/>
-
     </LinearLayout>
-
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/azul_gremio"
+        android:layout_height="wrap_content"
+        android:text="Salvar Gastos">
+    </Button>
 
 </LinearLayout>
 </ScrollView>
