@@ -39,6 +39,7 @@ public class DialogViagem extends AppCompatDialogFragment {
                         String qntdPessoasDigitado = qntdPesssoas.getText().toString();
                         if(nDiasDigitado.isEmpty()){
                             Toast.makeText(getActivity(), "Preencha de quantos dias será a viagem!", Toast.LENGTH_LONG).show();
+                            
                         } else if(qntdPessoasDigitado.isEmpty()){
                             Toast.makeText(getActivity(), "Preencha quantas pessoas vão na viagem!", Toast.LENGTH_LONG).show();
                         } else{

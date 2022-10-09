@@ -1,10 +1,10 @@
 package com.example.telastrabalho.model;
 
-public class Entretenimento {
+public class Diversos {
     private String nome;
-    private String valor;
+    private double valor;
 
-    public Entretenimento(String nome, String valor) {
+    public Diversos(String nome, double valor) {
         this.nome = nome;
         this.valor = valor;
     }
@@ -13,7 +13,7 @@ public class Entretenimento {
         this.nome = nome;
     }
 
-    public void setValor(String valor) {
+    public void setValor(double valor) {
         this.valor = valor;
     }
 
@@ -21,7 +21,7 @@ public class Entretenimento {
         return nome;
     }
 
-    public String getValor() {
+    public double getValor() {
         return valor;
     }
 }

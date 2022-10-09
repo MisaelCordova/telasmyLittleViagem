@@ -439,24 +439,32 @@
             android:layout_marginLeft="5dp"
             android:layout_height="wrap_content"
             android:textSize="28dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="50dp"
             android:textStyle="bold"
             android:textColor="@color/white"
-            android:text="Entreterimento/Diversos"/>
+            android:text="Diversos"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:textStyle="bold"
+            android:layout_marginRight="20dp"
             android:textSize="28dp"
             android:text="Valor:"/>
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:text="Adicionar:"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <ListView
-            android:id="@+id/entreterimento"
+            android:id="@+id/listDiversos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </ListView>
@@ -500,12 +508,7 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:text="Adicionar a viagem:"/>
-        <Switch
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="50dp"
-            android:textSize="25dp">
-        </Switch>
+
     </LinearLayout>
 
 

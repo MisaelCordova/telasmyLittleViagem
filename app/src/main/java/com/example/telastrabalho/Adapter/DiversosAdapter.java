@@ -7,16 +7,16 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.telastrabalho.model.Entretenimento;
+import com.example.telastrabalho.model.Diversos;
 import com.example.telastrabalho.R;
 
 import java.util.ArrayList;
 
-public class EntretenimentoAdapter extends BaseAdapter {
-    private ArrayList<Entretenimento> arlLista;
+public class DiversosAdapter extends BaseAdapter {
+    private ArrayList<Diversos> arlLista;
     private Activity act;
 
-    public EntretenimentoAdapter(final Activity act, final ArrayList<Entretenimento> arlLista) {
+    public DiversosAdapter(final Activity act, final ArrayList<Diversos> arlLista) {
         this.act = act;
         this.arlLista = arlLista;
     }
@@ -40,16 +40,16 @@ public class EntretenimentoAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         if (view == null) {
-            view = act.getLayoutInflater().inflate(R.layout.activity_entretenimento, viewGroup, false);
+            view = act.getLayoutInflater().inflate(R.layout.activity_diversos, viewGroup, false);
         }
 
-        Entretenimento e = arlLista.get(i);
+        Diversos d = arlLista.get(i);
 
-        EditText nomePessoa = view.findViewById(R.id.nomeDiverso);
-        nomePessoa.setText(e.getNome());
+        TextView nomeDiverso = view.findViewById(R.id.nomeDiverso);
+        nomeDiverso.setText(d.getNome());
 
-        TextView cpfPessoa = view.findViewById(R.id.valorDiverso);
-        cpfPessoa.setText(e.getValor());
+        TextView valorDiverso = view.findViewById(R.id.valorDiverso);
+        valorDiverso.setText(Double.toString(d.getValor()));
 
         return view;
     }
